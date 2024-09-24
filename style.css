@@ -1,8 +1,9 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
+/* Navbar */
 
 .main-header {
     background-color: #dc5d05;
@@ -33,6 +34,7 @@ a {
     font-size: 16px;
 }
 
+/* Grid */
 
 .product-section {
     padding: 20px;
@@ -46,12 +48,47 @@ a {
 }
 
 .col-33 {
-    width: 25%; 
+    width: 25%;
     box-sizing: border-box;
 }
 
 img {
     width: 100%;
     height: auto;
-    border: 3px solid #ff0000; 
+    border: 3px solid #ff0000;
+}
+
+.discounted-price {
+    color: red;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+/* hover */
+
+.product {
+    position: relative;
+}
+
+.primary-image,
+.hover-image {
+    width: 100%;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product:hover .primary-image {
+    opacity: 0;
+}
+
+.product:hover .hover-image {
+    opacity: 1;
 }
