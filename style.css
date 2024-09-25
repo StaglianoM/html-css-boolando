@@ -125,6 +125,11 @@ img {
     color: red;
 }
 
+.big-heart {
+    font-size: 1.5rem; 
+    line-height: 1; 
+}
+
 /* footer */
 
 .main-footer {
